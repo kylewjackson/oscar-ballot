@@ -1,22 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Oscar Ballot 2024 by Kyle Jackson</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-	</head>
-	<body class="container">
-		<h1 class="text-center">Oscar Ballot 2024</h1>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oscar Ballot Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .accordion-button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Oscar Ballot Form</h1>
+
+  <form id="oscarBallotForm">
+    <div class="accordion" id="accordionCategories">
+
+      <!-- Best Director -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingBestDirector">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBestDirector" aria-expanded="true" aria-controls="collapseBestDirector">
+            Best Director
+          </button>
+        </h2>
+        <div id="collapseBestDirector" class="accordion-collapse collapse show" aria-labelledby="headingBestDirector" data-bs-parent="#accordionCategories">
+          <div class="accordion-body">
+            <div class="mb-3">
+              <label for="bestDirectorPrediction" class="form-label">Prediction:</label>
+              <div>
+                <input type="radio" id="bestDirectorPrediction1" name="bestDirectorPrediction" value="Justine Triet - Anatomy of a Fall">
+                <label for="bestDirectorPrediction1">Justine Triet - <em>Anatomy of a Fall</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorPrediction2" name="bestDirectorPrediction" value="Martin Scorsese – Killers of the Flower Moon">
+                <label for="bestDirectorPrediction2">Martin Scorsese - <em>Killers of the Flower Moon</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorPrediction3" name="bestDirectorPrediction" value="Christopher Nolan – Oppenheimer">
+                <label for="bestDirectorPrediction3">Christopher Nolan - <em>Oppenheimer</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorPrediction4" name="bestDirectorPrediction" value="Yorgos Lanthimos – Poor Things">
+                <label for="bestDirectorPrediction4">Yorgos Lanthimos - <em>Poor Things</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorPrediction5" name="bestDirectorPrediction" value="Jonathan Glazer – The Zone of Interest">
+                <label for="bestDirectorPrediction5">Jonathan Glazer - <em>The Zone of Interest</em></label>
+              </div>
+              <!-- Repeat for other nominees -->
+            </div>
+            <div class="mb-3">
+              <label for="bestDirectorFavorite" class="form-label">Favorite:</label>
+              <div>
+                <input type="radio" id="bestDirectorFavorite1" name="bestDirectorFavorite" value="Justine Triet - Anatomy of a Fall">
+                <label for="bestDirectorFavorite1">Justine Triet - <em>Anatomy of a Fall</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorFavorite2" name="bestDirectorFavorite" value="Martin Scorsese – Killers of the Flower Moon">
+                <label for="bestDirectorFavorite2">Martin Scorsese - <em>Killers of the Flower Moon</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorFavorite3" name="bestDirectorFavorite" value="Christopher Nolan – Oppenheimer">
+                <label for="bestDirectorFavorite3">Christopher Nolan - <em>Oppenheimer</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorFavorite4" name="bestDirectorFavorite" value="Yorgos Lanthimos – Poor Things">
+                <label for="bestDirectorFavorite4">Yorgos Lanthimos - <em>Poor Things</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestDirectorFavorite5" name="bestDirectorFavorite" value="Jonathan Glazer – The Zone of Interest">
+                <label for="bestDirectorFavorite5">Jonathan Glazer - <em>The Zone of Interest</em></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Best Actor -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingBestActor">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBestActor" aria-expanded="true" aria-controls="collapseBestActor">
+            Best Actor
+          </button>
+        </h2>
+        <div id="collapseBestactor" class="accordion-collapse collapse show" aria-labelledby="headingBestActor" data-bs-parent="#accordionCategories">
+          <div class="accordion-body">
+            <div class="mb-3">
+              <label for="bestActorPrediction" class="form-label">Prediction:</label>
+              <div>
+                <input type="radio" id="bestActorPrediction1" name="bestActorPrediction" value="Bradley Cooper – Maestro as Leonard Bernstein">
+                <label for="bestActorPrediction1">Bradley Cooper - <em>Maestro as Leonard Bernstein</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorPrediction2" name="bestActorPrediction" value="Colman Domingo – Rustin as Bayard Rustin">
+                <label for="bestActorPrediction2">Colman Domingo - <em>Rustin as Bayard Rustin</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorPrediction3" name="bestActorPrediction" value="Paul Giamatti – The Holdovers as Paul Hunham">
+                <label for="bestActorPrediction3">Paul Giamatti - <em>The Holdovers as Paul Hunham</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorPrediction4" name="bestActorPrediction" value="Cillian Murphy – Oppenheimer as J. Robert Oppenheimer">
+                <label for="bestActorPrediction4">Cillian Murphy - <em>Oppenheimer as J. Robert Oppenheimer</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorPrediction5" name="bestActorPrediction" value="Jeffrey Wright – American Fiction as Thelonious &quot;Monk&quot; Ellison">
+                <label for="bestActorPrediction5">Jeffrey Wright - <em>American Fiction as Thelonious &quot;Monk&quot; Ellison</em></label>
+              </div>
+              <!-- Repeat for other nominees -->
+            </div>
+            <div class="mb-3">
+              <label for="bestActorFavorite" class="form-label">Favorite:</label>
+              <div>
+                <input type="radio" id="bestActorFavorite1" name="bestActorFavorite" value="Bradley Cooper – Maestro as Leonard Bernstein">
+                <label for="bestActorFavorite1">Bradley Cooper - <em>Maestro as Leonard Bernstein</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorFavorite2" name="bestActorFavorite" value="Colman Domingo – Rustin as Bayard Rustin">
+                <label for="bestActorFavorite2">Colman Domingo - <em>Rustin as Bayard Rustin</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorFavorite3" name="bestActorFavorite" value="Paul Giamatti – The Holdovers as Paul Hunham">
+                <label for="bestActorFavorite3">Paul Giamatti - <em>The Holdovers as Paul Hunham</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorFavorite4" name="bestActorFavorite" value="Cillian Murphy – Oppenheimer as J. Robert Oppenheimer">
+                <label for="bestActorFavorite4">Cillian Murphy - <em>Oppenheimer as J. Robert Oppenheimer</em></label>
+              </div>
+              <div>
+                <input type="radio" id="bestActorFavorite5" name="bestActorFavorite" value="Jeffrey Wright – American Fiction as Thelonious &quot;Monk&quot; Ellison">
+                <label for="bestActorFavorite5">Jeffrey Wright - <em>American Fiction as Thelonious &quot;Monk&quot; Ellison</em></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <button type="submit" class="btn btn-primary" id="submitButton" disabled>Submit Ballot</button>
+    </div>
+  </form>
+
+  <div id="selectedFilms" class="col-12 mt-5 d-none">
+	<div id="count" class="mt-3">Total Points: 0</div>
+    <h2>Selected Films:</h2>
+    <div id="checkboxContainer"></div>
+  </div>
+
+  <div id="infoBox" class="alert alert-info mt-4" role="alert">
+    <h4 class="alert-heading">Instructions:</h4>
+    <ul>
+      <li>Select your predictions and favorites for each category.</li>
+      <li>Once done, click the "Submit Ballot" button.</li>
+      <li>Your votes will be recorded, and you will be alerted.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('oscarBallotForm');
+  const submitButton = document.getElementById('submitButton');
+
+  // Function to convert camel case string to words
+  function camelCaseToWords(camelCaseString) {
+    return camelCaseString.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, function(str){ return str.toUpperCase(); });
+  }
+
+  form.addEventListener('change', () => {
+    submitButton.disabled = !form.checkValidity();
+  });
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const votes = [];
+    for (const [name, value] of formData) {
+      votes.push({ [name]: value });
+    }
+    // Send votes to server or store locally
+    console.log(votes);
+    alert('Your votes have been cast!');
+    //Hide and Show forms
+    document.querySelector('#oscarBallotForm').classList.add('d-none');
+	document.querySelector('#infoBox').classList.add('d-none');
+    document.querySelector('#selectedFilms').classList.remove('d-none');
+    //Create checkboxes
+    createCheckboxes(votes);
+    // Clear selections
+    form.reset();
+    submitButton.disabled = true;
+  });
+
+  function createCheckboxes(votes) {
+    const checkboxContainer = document.getElementById('checkboxContainer');
+    checkboxContainer.innerHTML = ''; // Clear previous checkboxes
+
+    votes.forEach((vote, i) => {
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = Object.keys(vote)[0];
+	  checkbox.dataset.league = 'prediction';
+	  if (Math.abs(i % 2) == 1) {
+        checkbox.dataset.league = 'favorite';
+      }
+
+      const label = document.createElement('label');
+      label.htmlFor = checkbox.id;
+      label.appendChild(document.createTextNode(camelCaseToWords(checkbox.id)));
+      label.insertAdjacentHTML('beforeend', `: ${vote[checkbox.id]}`);
+
+      const checkboxDiv = document.createElement('div');
+      checkboxDiv.classList.add('form-check');
+      checkboxDiv.appendChild(checkbox);
+      checkboxDiv.appendChild(label);
+
+      checkboxContainer.appendChild(checkboxDiv);
+
+      if (Math.abs(i % 2) == 1) {
+        checkboxDiv.append(document.createElement('hr'));
+      }
+    });
+  }
+
+  const selectedFilms = document.getElementById('selectedFilms');
+  const countDiv = document.getElementById('count');
+
+  selectedFilms.addEventListener('change', function() {
+    const checkboxes = selectedFilms.querySelectorAll('input[type="checkbox"][checked]');
+    countDiv.textContent = `Total Points: ${checkboxes.length}`;
+  });
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
